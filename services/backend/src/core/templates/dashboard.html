@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Личный кабинет</h1>
+    
+    <div style="height: 600px; width: 100%;">
+        <iframe src="{{ dash_url }}" style="height:100%; width:100%; border:none;"></iframe>
+    </div>
+    
+    <h2>Текущие тесты</h2>
+    <ul>
+        {% for test in tests %}
+        <li>
+            {{ test.title }} ({{ test.level }})
+            {% if user.is_teacher %}
+            <a href="#">Редактировать</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
