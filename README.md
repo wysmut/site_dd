@@ -9,6 +9,7 @@
         ├── backend/                # Django-приложение
         │   ├── Dockerfile
         │   ├── requirements.txt    # Django, gunicorn, psycopg2, djangorestframework
+        │   ├── entrypoint.sh       # Миграции + сборка статики 
         │   ├── gunicorn.conf.py
         │   └── src/
         │       ├── manage.py
