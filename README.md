@@ -1,4 +1,5 @@
     project/
+    ├── .gitignore                  # Игнорируемые файлы
     ├── docker-compose.yml          # Оркестрация контейнеров
     ├── .env                        # Секреты (SECRET_KEY, DB_CREDS)
     ├── init-db.sh                  # Скрипт инициализации БД
