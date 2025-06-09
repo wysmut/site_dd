@@ -1,6 +1,7 @@
     project/
     ├── docker-compose.yml          # Оркестрация контейнеров
     ├── .env                        # Секреты (SECRET_KEY, DB_CREDS)
+    ├── init-db.sh                  # Скрипт инициализации БД
     ├── nginx/
     │   └── nginx.conf              # Прокси /dash/ → dash_app
     └── services/
